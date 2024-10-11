@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+}
+body{
+    background-color: #03010e;
+    color: white;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+    background-color: transparent;
+    align-items: center;
+    margin-top: -50px;
+    /* background-color: rgb(21, 20, 20); */
+    backdrop-filter: blur(5px);
+    height: 50px;
+    z-index: 100;
+}
+header .left{
+    font-size: 1.5rem;
+}
+header .left a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+header .right a{
+    margin-left: 3.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    border-bottom: transparent;
+}
+header .right a:hover{
+    color: rgb(22, 163, 142);
+    font-size: 1.01rem;
+    border-bottom: 2px solid rgb(22, 163, 142);
+}
+.home{
+    min-height: 100vh;
+    max-width: 100%;
+}
+.home{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    margin: 50px 0px 0;
+}
+.home .left{
+    max-width: 35rem;
+    margin-left:80px;
+}
+.home .left h1{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.left .roll{
+    width: 40rem;
+}
+.left .roll h3{
+    font-size: 1.8rem;
+    color: transparent;
+    -webkit-text-stroke: .7px rgb(22, 163, 142);
+}
+.left p{
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+}
+.home .right img{
+    max-width: 100%;
+    height: auto;
+    transition: 1s;  
+}
+.btn-box{
+    display: flex;
+}
+.btn-box .btn{
+    margin: 2rem 4rem 0 0;
+    background-color: rgb(22, 163, 142);
+    padding: .7rem;
+    border-radius: 10px;
+
+}
+.btn-box a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.btn-box a:hover{
+    background-color: white;
+    color: rgb(22, 163, 142);
+    box-shadow: 7px 7px 30px rgb(22, 163, 142);
+}
+.left .logos{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.left .logos a{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 1.7rem 0 0;
+    font-size: 35px;
+    color: rgb(22, 163, 142);
+    padding: .2rem;
+    transition: .5s;
+}
+.left .logos a:hover{
+    color: white;
+    background-color: rgb(22, 163, 142);
+    box-shadow: 2px 3px 30px;
+}
+.about-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    height: 100vh;
+    max-width: 100%;
+    background-color: #03010e;
+}
+.about-page h2{
+    font-size: 2.5rem;
+    font-family: "Playwrite FR Moderne", cursive;
+}
+.about-img{
+    display: flex;
+    margin-top: 2rem;
+}
+.about-img img{
+    border: 5px double rgb(22, 163, 142);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transition: .5s linear;
+}
+.about-img img:hover{
+    box-shadow: 0 0 90px white;
+}
+.about-content h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px rgb(22, 163, 142)
+}
+.about-content p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 8rem 0 8rem;
+    text-align: center;
+}
+.btn-box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+}
+.btn-box2 a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    width: 7.5rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-color: rgb(22, 163, 142);
+    transition: .5s;
+}
+.btn-box2 a:hover{
+    background-color: white;
+    color: rgb(22, 163, 142);
+    border: 2px solid rgb(22, 163, 142);
+}
+.skills{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;;
+}
+.skills-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+.skills-left{
+    max-width: 50%;
+}
+.skills-left h3{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+}
+.skills-left h3:hover{
+    color: rgb(22, 163, 142);
+    font-size: 1.85rem;
+    cursor: pointer;
+}
+.skill-box1{
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 57);
+    transition: linear 0.5s;
+}
+.skill-box1:hover{
+    position: relative;
+    width: 84%;
+    height: 10px;
+    content: "";
+    background-color: rgb(22, 163, 142);
+    cursor: pointer;
+}
+.skill-box2{
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 57);
+    transition: linear .5s;
+}
+.skill-box2:hover{
+    position: relative;
+    width: 79%;
+    height: 10px;
+    content: "";
+    background-color: rgb(22, 163, 142);
+    cursor: pointer;
+}
+.skill-box3{
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 57);
+    transition: linear .5s;
+}
+.skill-box3:hover{
+    position: relative;
+    width: 73%;
+    height: 10px;
+    content: "";
+    background-color: rgb(22, 163, 142);
+    cursor: pointer;
+}
+.skill-box4{
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 57);
+    transition: linear .5s;
+}
+.skill-box4:hover{
+    position: relative;
+    width: 89%;
+    height: 10px;
+    content: "";
+    background-color: rgb(22, 163, 142);
+    cursor: pointer;
+}
+.skill-box5{
+    width: 400px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: rgb(57, 57, 57);
+    transition: linear .5s;
+}
+.skill-box5:hover{
+    position: relative;
+    width: 67%;
+    height: 10px;
+    content: "";
+    background-color: rgb(22, 163, 142);
+    cursor: pointer;
+}
+.html , .css , .js , .figma , .dsa{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.skills-right{
+    max-width: 50%;
+}
+.skills-right h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    transition: .5s;
+}
+.skills-right h3:hover{
+    color: rgb(22, 163, 142);
+    font-size: 1.85rem;
+    cursor: pointer;
+}
+.skills-right p{
+    margin-top: 20px;
+}
+.skill-circle1 , .skill-circle2 , .skill-circle3 , .skill-circle4{
+    width: 70px;
+    height: 70px;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid rgb(22, 163, 142);
+    border-right: 5px solid rgb(22, 163, 142);
+    border-bottom: 5px solid rgb(22, 163, 142);
+    transition: .5s linear;
+}
+.skill-r1{
+    display: flex;
+    gap: 150px;
+    padding: 1.3rem;
+    justify-content: center;
+}
+.skill-r2{
+    display: flex;
+    gap: 80px;
+    padding: 1.3rem;
+    margin-left: 2.4rem;
+}
+.whole-right{
+    display: flex;
+    justify-content: center;
+}
+.projects-page{
+    width: 100%;
+    height: 100vh;
+}
+.project-head{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.images-r1{
+    display: flex;
+}
+.project-images{
+    padding: 2rem;
+}
+.images-r1 img{
+    width: 300px;
+    height: 200px;
+    border: 3px solid rgb(22, 163, 142);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(22, 163, 142);
+    margin: auto;
+    transition: .5s;
+}
+.images-r2{
+    display: flex;
+}
+.images-r2 img{
+    width: 300px;
+    height: 200px;
+    border: 3px solid rgb(22, 163, 142);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(22, 163, 142);
+    margin: auto;
+    margin-top: 3rem;
+    transition: .5s;
+}
+.images-r3{
+    display: flex;
+}
+.images-r3 img{
+    width: 300px;
+    height: 200px;
+    border: 3px solid rgb(22, 163, 142);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(22, 163, 142);
+    margin: auto;
+    margin-top: 3rem;
+    transition: .5s;
+}
+.project-images img:hover{
+    scale: 1.03;
+    box-shadow: 0px 0px 30px rgb(22, 163, 142);
+}
+.contact-head{
+    margin-top: 15rem;
+    width: 100%;
+    height: 100vh;
+}
+.contact-head{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -400px;
+}
+form input{
+    width: 700px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 5px;
+    border: rgb(40, 40, 40);
+    color: rgb(22, 163, 142);
+}
+form .name , .email, .phone, .message{
+    border: 1px solid rgb(22, 163, 142);
+    border-radius: 10px;
+    background-color: rgb(40, 40, 40);
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgb(22, 163, 142);
+}
+form .message input{
+    height: 125px;
+    /* text-align: center; */
+}
+.contact-btn button{
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgb(22, 163, 142);
+    color: rgb(40, 40, 40);
+    transition: .8s;
+}
+.contact-btn{
+    padding: 2rem;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(40, 40, 40);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn button:hover{
+    background-color: white;
+    border: 2px solid rgb(22, 163, 142);
+    box-shadow: 0 0 40px rgb(22, 163, 142);
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent,rgb(22,163,142),#00c6ff);
+    border-radius: 6px;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent,#00c6ff);
+}
